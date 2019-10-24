@@ -1,0 +1,4 @@
+<design:component>
+        <design:attribute name='AddVisit' label='Relate a visit/Call' />
+        <design:attribute name='NewVisit' label='Plan a Visit/Call' />
+</design:component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Closed_Lost</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Closed Lost</shortDescription>
+        <value>Closed Lost</value>
+    </labels>
+    <labels>
+        <fullName>Closed_Won</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Closed Won</shortDescription>
+        <value>Closed Won</value>
+    </labels>
+    <labels>
+        <fullName>FlowOpportunity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FlowOpportunity</shortDescription>
+        <value>opportunity</value>
+    </labels>
+    <labels>
+        <fullName>ObjectName_Product2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ObjectName_Product2</shortDescription>
+        <value>Product2</value>
+    </labels>
+    <labels>
+        <fullName>PitchRecordLayout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PitchRecordLayout</shortDescription>
+        <value>Pitch record layout</value>
+    </labels>
+    <labels>
+        <fullName>ObjectName_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ObjectName_User</shortDescription>
+        <value>User</value>
+    </labels>
+</CustomLabels>

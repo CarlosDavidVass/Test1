@@ -1,0 +1,43 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable" access="global">
+    <aura:attribute name="isOpen" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="isOpenOpp" type="Boolean" default="false" access="global"/>
+    <aura:if isTrue="{!v.isOpen}">
+        <div class="divHeight">
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header slds-modal__header_empty">
+                        <button class="slds-button slds-button--icon-inverse slds-modal__close"
+                            onclick="{!c.closeFlowModal}">
+                            <lightning:icon iconName="utility:close" size="medium" variant="bare" />
+                        </button>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_m   edium">
+                        <lightning:flow aura:id="Add_Visit_to_Pitch" onstatuschange="{!c.closeModalOnFinish}" />
+                        <lightning:flow aura:id="Create_Opportunity_From_Pitch"
+                            onstatuschange="{!c.closeModalOnFinish}" />
+                        <lightning:flow aura:id="Add_Opportunity" onstatuschange="{!c.closeModalOnFinish}" />
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </aura:if>
+    <div class="slds-box slds-theme_default ">
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class="slds-size_1-of-2 slds-float_left">
+                <div class="slds-float_left">
+                    <lightning:button variant="Neutral" label="Add Opportunity" title="Base action"
+                        onclick="{! c.addPitchOppFlow }" />
+                </div>
+            </div>
+            <div class="slds-size_1-of-2 slds-float_right">
+                <div class="slds-float_right">
+                    <lightning:button variant="Neutral" label="New Visit" title="Base action"
+                        onclick="{! c.runNewPitchVisitFlow }" />
+                    <lightning:button variant="brand" label="New Opportunity" title="Neutral action"
+                        onclick="{! c.runNewPitchOppFlow }" />
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

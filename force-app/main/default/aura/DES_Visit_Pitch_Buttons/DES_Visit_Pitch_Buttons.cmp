@@ -1,0 +1,12 @@
+<aura:component
+    implements="force:lightningQuickActionWithoutHeader,force:hasSObjectName,force:hasRecordId,lightning:availableForFlowScreens"
+    access="global">
+    <aura:attribute name="AddVisit" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="NewVisit" type="Boolean" default="false" access="global"/>
+    <div class="slds-align_absolute-center">
+        <lightning:button aura:id="NEXT" label="Relate a visit/Call" variant="neutral"
+            class="slds-button slds-button_neutral" onclick="{!c.addvisit}" />
+        <lightning:button aura:id="NEXT" label="Plan a Visit/Call" variant="brand" class="slds-button slds-button_brand"
+            onclick="{!c.newvisit}" />
+    </div>
+</aura:component>

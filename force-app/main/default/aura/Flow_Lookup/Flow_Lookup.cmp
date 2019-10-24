@@ -1,0 +1,20 @@
+<aura:component controller="Util_PickList" implements="force:appHostable,force:hasRecordId,force:lightningQuickAction,lightning:availableForFlowScreens" access="global">
+  <aura:attribute name="selectedLookUpUserID" type="String" default="" access="global"/>
+  <aura:attribute name="selectedLookUpRecordID" type="String" default="" access="global"/>
+  <aura:attribute name="custom" type="Boolean" default="true" access="global"/>
+  <aura:attribute name="equals" type="Boolean" default="false" access="global"/>
+  <aura:attribute name="searchField" type="String" default="" access="global"/>
+  <aura:attribute name="objectAPIName" type="string" default="" access="global"/>
+  <aura:attribute name="label" type="String" default="" access="global"/>
+  <aura:attribute name="height" type="String" default="180px" access="global"/>
+  <aura:attribute name="selectedValue" type="String" access="global"/>
+  <aura:attribute name="showHelpText" type="Boolean" default="false" access="global"/>
+  <aura:attribute name="useSOSLQuery" type="Boolean" default="false" access="global"/>
+  <aura:attribute name="useSOSLQueryvalidation" type="String" default="" access="global"/>
+  <aura:attribute name="useSOSLQueryWherevalidation" type="String" default="" access="global"/>
+  <aura:attribute name="contentHelpText" type="string" access="global"/>
+  <aura:attribute name="ipUserFilter" type="string" access="global"/>
+  <c:customLookup objectAPIName="{!v.objectAPIName}" IconName="standard:user" label="{!v.label}" selectedRecordId="{!v.selectedLookUpUserID}" custom="{!v.custom}" equals="{!v.equals}" searchField="{!v.searchField}" fieldName="{!v.searchField}"
+                  selectedValue="{!v.selectedValue}" showHelpText="{!v.showHelpText}" useSOSLQuery="{!v.useSOSLQuery}" contentHelpText="{!v.contentHelpText}" ipUserFilter="{!v.ipUserFilter}" useSOSLQueryvalidations="{!v.useSOSLQueryvalidation}" useSOSLQueryWherevalidations="{!v.useSOSLQueryWherevalidation}"/>
+  <div style="{!'min-height:'+ v.height + ';'}"></div>
+</aura:component>

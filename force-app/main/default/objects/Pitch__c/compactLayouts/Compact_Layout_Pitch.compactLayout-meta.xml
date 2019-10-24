@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compact_Layout_Pitch</fullName>
+    <fields>Name</fields>
+    <fields>solution_name_path_desc__c</fields>
+    <fields>solution_category_name__c</fields>
+    <fields>participant_id__c</fields>
+    <fields>gf_creation_date__c</fields>
+    <fields>event_link_update_date__c</fields>
+    <fields>OwnerId</fields>
+    <label>Compact Layout Pitch</label>
+</CompactLayout>

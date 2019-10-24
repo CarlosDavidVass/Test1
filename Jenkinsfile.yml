@@ -1,0 +1,29 @@
+---
+domain: salesforce.component
+stages:
+  staticAnalysis:
+    params:
+      pmdApex:
+        version: 6
+      skipSonar: false
+      sonar:
+        qualityProfile: ether.salesforce.component
+        qualityGate: ether.salesforce
+  functionalTesting:
+    skip: false
+    params:
+      webDriverIo:
+        configFile: config/suite.saucelabs.conf.js
+  publish:
+    params:
+      mdapiConfig:
+        apiVersion: 46.0
+        testLevel: RunLocalTests
+  deploy:
+    skip: true
+  unitTesting:
+    skip: true
+  functionalTesting:
+    skip: true
+  postSuccess:
+    skip: true
